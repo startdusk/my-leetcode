@@ -14,6 +14,7 @@
 
 // 我们用dec和inc两个flag代表数组的单调性，遍历数组，判断每个位置上是否符合单调性(使用与或运算符)。
 // 如果所有位置都符合，那么至少有一个flag始终为true，返回其中一种结果。
+// 分析：时间复杂度O(n)，空间复杂度O(1)
 package array
 
 func isMonotonic(arr []int) bool {
