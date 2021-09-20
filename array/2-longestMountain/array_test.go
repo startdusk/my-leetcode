@@ -35,6 +35,10 @@ func TestLongestMountain(t *testing.T) {
 			if cc.res != res {
 				t.Errorf("failed test case arr: %v, want %v but got %v", cc.arr, cc.res, res)
 			}
+			res = longestMountain2(cc.arr)
+			if cc.res != res {
+				t.Errorf("failed2 test case arr: %v, want %v but got %v", cc.arr, cc.res, res)
+			}
 		})
 	}
 }
